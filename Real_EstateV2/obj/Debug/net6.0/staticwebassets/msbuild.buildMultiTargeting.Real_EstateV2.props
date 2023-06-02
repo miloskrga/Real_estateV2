@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Real_EstateV2.props" />
+</Project>

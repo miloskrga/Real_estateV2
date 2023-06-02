@@ -1,0 +1,64 @@
+﻿@page
+@model Real_EstateV2.Models.Korisnik
+@{
+}
+
+<div>
+    <form method="post" asp-action="Registracija">
+        <table>
+            <thead>
+                <td>
+
+                </td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ime</td>
+                    <td><input type="text" name="Ime"  /></td>
+                </tr>
+                <tr>
+                    <td>Prezime</td>
+                    <td><input type="text" name="Prezime" /></td>
+                </tr>
+                <tr>
+                    <td>Useraname</td>
+                    <td><input type="text" name="Username" /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="Password" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="Email" /></td>
+                </tr>
+                <tr>
+                    <td>Telefon</td>
+                    <td><input type="text" name="Telefon" /></td>
+                </tr>
+                <tr>
+                    <td>Datum rodjenja</td>
+                    <td><input type="date" name="DatumRodjenja" /></td>
+                </tr>
+                <tr>
+                    <td>Tip Korisnika</td>
+                    <td>
+                        <select name="IdTipKorisnika">
+                            <option value="Owner">Vlasnik</option>
+                            <option value="Customer">Kupac</option>
+                        </select>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>Agencija</td>
+                    <td><input type="text" name="Ime" /></td>
+                </tr>
+                <tr>
+                    <td>Naziv Grada</td>
+                    <td><input type="text" name="NazivGrada"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Registruj se" />
+    </form>
+</div>
